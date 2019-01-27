@@ -4,12 +4,12 @@ import logo from '../../logo.png'
 
 class Home extends Component {
   componentDidMount() {
-    console.log(this.props.web3.web3Instance);
+    // console.log(this.props.web3.web3Instance);
     
   }
   render() {
-    {console.log(this.props.SimpleStorage.events);
-    }
+    // {console.log(this.props.SimpleStorage.events);
+    // }
     return (
       <main className="container">
         <div className="pure-g">
