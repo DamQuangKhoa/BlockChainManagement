@@ -17,6 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Route exact path="/home"  component={HomeContainer}/> */}
+        {/* <R2t path="/home"  component={HomeContainer}/> */}
         <Menu />
         <div class="all-content-wrapper">
         <div>
