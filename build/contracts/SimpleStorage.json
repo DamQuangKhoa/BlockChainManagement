@@ -13,8 +13,7 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function",
-      "signature": "0x2a1afcd9"
+      "type": "function"
     },
     {
       "anonymous": false,
@@ -26,8 +25,7 @@
         }
       ],
       "name": "StorageSet",
-      "type": "event",
-      "signature": "0x5af27279c82c15d19a0294e50189752a91aa6b5db57e6451e74709b740dcc05e"
+      "type": "event"
     },
     {
       "constant": false,
@@ -41,18 +39,17 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function",
-      "signature": "0x60fe47b1"
+      "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610115806100206000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a1afcd914604e57806360fe47b1146076575b600080fd5b348015605957600080fd5b50606060a0565b6040518082815260200191505060405180910390f35b348015608157600080fd5b50609e6004803603810190808035906020019092919050505060a6565b005b60005481565b806000819055507f5af27279c82c15d19a0294e50189752a91aa6b5db57e6451e74709b740dcc05e6000546040518082815260200191505060405180910390a1505600a165627a7a7230582061c34a3144f896622d6e78d8c2c02cbeb91eaa0b1601fb9b1552ca1a04759bb20029",
-  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a1afcd914604e57806360fe47b1146076575b600080fd5b348015605957600080fd5b50606060a0565b6040518082815260200191505060405180910390f35b348015608157600080fd5b50609e6004803603810190808035906020019092919050505060a6565b005b60005481565b806000819055507f5af27279c82c15d19a0294e50189752a91aa6b5db57e6451e74709b740dcc05e6000546040518082815260200191505060405180910390a1505600a165627a7a7230582061c34a3144f896622d6e78d8c2c02cbeb91eaa0b1601fb9b1552ca1a04759bb20029",
+  "bytecode": "0x608060405234801561001057600080fd5b50610115806100206000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a1afcd914604e57806360fe47b1146076575b600080fd5b348015605957600080fd5b50606060a0565b6040518082815260200191505060405180910390f35b348015608157600080fd5b50609e6004803603810190808035906020019092919050505060a6565b005b60005481565b806000819055507f5af27279c82c15d19a0294e50189752a91aa6b5db57e6451e74709b740dcc05e6000546040518082815260200191505060405180910390a1505600a165627a7a72305820a476fb23de8d381c6bcd5d950fccae223864163fe7674ebd604fdf4f4165c4f10029",
+  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a1afcd914604e57806360fe47b1146076575b600080fd5b348015605957600080fd5b50606060a0565b6040518082815260200191505060405180910390f35b348015608157600080fd5b50609e6004803603810190808035906020019092919050505060a6565b005b60005481565b806000819055507f5af27279c82c15d19a0294e50189752a91aa6b5db57e6451e74709b740dcc05e6000546040518082815260200191505060405180910390a1505600a165627a7a72305820a476fb23de8d381c6bcd5d950fccae223864163fe7674ebd604fdf4f4165c4f10029",
   "sourceMap": "26:188:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:188:2;;;;;;;",
   "deployedSourceMap": "26:188:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;97:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;97:22:2;;;;;;;;;;;;;;;;;;;;;;;124:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:88:2;;;;;;;;;;;;;;;;;;;;;;;;;;97:22;;;;:::o;124:88::-;171:1;158:10;:14;;;;185:22;196:10;;185:22;;;;;;;;;;;;;;;;;;124:88;:::o",
   "source": "pragma solidity ^0.4.24;\n\ncontract SimpleStorage {\n  event StorageSet(\n    uint _message\n  );\n\n  uint public storedData;\n\n  function set(uint x) public {\n    storedData = x;\n\n     emit StorageSet(storedData);\n  }\n}\n",
-  "sourcePath": "/Users/smith/projects/fetch/blockchain/my_blockchain/contracts/SimpleStorage.sol",
+  "sourcePath": "/Users/ted/project/school/LuanVanBlockChain/BlockChainManagement/contracts/SimpleStorage.sol",
   "ast": {
-    "absolutePath": "/Users/smith/projects/fetch/blockchain/my_blockchain/contracts/SimpleStorage.sol",
+    "absolutePath": "/Users/ted/project/school/LuanVanBlockChain/BlockChainManagement/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
         208
@@ -323,7 +320,7 @@
     "src": "0:215:2"
   },
   "legacyAST": {
-    "absolutePath": "/Users/smith/projects/fetch/blockchain/my_blockchain/contracts/SimpleStorage.sol",
+    "absolutePath": "/Users/ted/project/school/LuanVanBlockChain/BlockChainManagement/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
         208
@@ -595,14 +592,14 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xf482275649d04F3891754ac29F56814147De19cC",
-      "transactionHash": "0xa5f5de49cd5c5cb95520814d6c6198ef644b2d548181f5e0e331acfab88790f8"
+      "address": "0xc3102867C6241D690700435B1E404eCfCD144c04",
+      "transactionHash": "0xf6eb6cb60b3db82154e8d38cf86566ec03e4c1b8934cf098dd4ddd87b5b279b2"
     },
     "1546403553169": {
       "events": {},
@@ -641,12 +638,6 @@
       "transactionHash": "0x50201d5216e6b5e8155ff8f4524166f086b215f61fc239a9b59690efb471d7a6"
     }
   },
-  "schemaVersion": "3.0.0",
-  "updatedAt": "2019-01-26T07:56:49.282Z",
-  "devdoc": {
-    "methods": {}
-  },
-  "userdoc": {
-    "methods": {}
-  }
+  "schemaVersion": "3.0.10",
+  "updatedAt": "2019-06-04T15:21:12.018Z"
 }
