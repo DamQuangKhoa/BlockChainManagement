@@ -13,12 +13,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Route exact path="/home"  component={HomeContainer}/> */}
+        {/* This component is not working , please see the index.js */}
         {/* <R2t path="/home"  component={HomeContainer}/> */}
-        <Menu />
-        <div class="all-content-wrapper">
-          <div />
-        </div>
+        {/* <Menu /> */}
+        <div class="all-content-wrapper" />
       </div>
     );
   }

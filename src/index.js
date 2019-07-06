@@ -35,8 +35,8 @@ ReactDOM.render(
                 className="main-header"
                 style={{ position: "fixed", width: "100%" }}
               >
-                <LogoUser />
-                <HeaderTop />
+                {/* <LogoUser /> */}
+                {/* <HeaderTop /> */}
               </header>
               {localStorage.getItem("token") ? (
                 <RouterURL />
