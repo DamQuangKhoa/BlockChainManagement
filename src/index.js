@@ -43,8 +43,8 @@ ReactDOM.render(
               ) : (
                 <Route path="/" component={BaseContainer} />
               )}
-
               {localStorage.getItem("token") ? <SideBar /> : ""}
+
               <Footer />
               <ControlSidebar />
             </div>
