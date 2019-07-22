@@ -9,7 +9,7 @@ contract ComplexStorage {
 
 	bytes16 public string1 = "test1";
 	bytes32 public string2 = "test1236";
-	string public string3 = "lets string something";
+	string public string4 = "lets string something";
 
 	mapping (address => uint) uints1;
 	mapping (address => DeviceData) structs1;
@@ -23,7 +23,10 @@ contract ComplexStorage {
 		string deviceYear;
 		string batteryWearLevel;
 	}
+	function set(string x) public {
+    	string4 = x;
 
+ 	 }
 
 	constructor() public {
 		address address1 = 0xbCcc714d56bc0da0fd33d96d2a87b680dD6D0DF6;

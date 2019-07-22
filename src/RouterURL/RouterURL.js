@@ -23,14 +23,16 @@ import ModalEditTask from "../container/TaskContainer/component/ModalEdit";
 //quan ly du an
 
 import ProjectContainer from "../container/ProjectContainer/ProjectContainer";
-import HomeContainer from "../layouts/demo/DemoContainer";
 import BaseContainer from "../layouts/base/BaseContainer";
+import HomeContainer from "../layouts/home/HomeContainer";
+import DeveloperContainer from "../layouts/developer/HomeContainer";
+import PaymentContainer from "../layouts/payment/HomeContainer";
 export default class RouterURL extends Component {
   render() {
     return (
       <div>
         <Switch>
-          <Route exact path="/home" component={HomeContainer} />
+          <Route exact path="/home" component={PesonnelContainer} />
           {/* quan ly nhan su */}
           <Route
             exact
@@ -53,6 +55,13 @@ export default class RouterURL extends Component {
             path="/home/nhan-su-chinh-thuc/sua/:id"
             component={ModalEdit}
           />
+          {/* <Route exact path="/ethereum/home" component={HomeContainer} /> */}
+          <Route
+            exact
+            path="/ethereum/developer"
+            component={DeveloperContainer}
+          />
+          <Route exact path="/ethereum/payment" component={PaymentContainer} />
           }/>
           {/* quan ly team */}
           <Route exact path="/home/nhom" component={TeamContainer} />
@@ -87,7 +96,7 @@ export default class RouterURL extends Component {
                         <Route exact path="/home/du-an/chi-tiet/:id" component={DetailTask} />
                         <Route exact path="/home/du-an/sua/:id"  component={ModalEditTask}/>}/> */}
           {/* trang chu */}
-          <Route component={Home} />
+          <Route component={PesonnelContainer} />
         </Switch>
       </div>
     );
