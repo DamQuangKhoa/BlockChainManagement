@@ -27,6 +27,7 @@ import BaseContainer from "../layouts/base/BaseContainer";
 import HomeContainer from "../layouts/home/HomeContainer";
 import DeveloperContainer from "../layouts/developer/HomeContainer";
 import PaymentContainer from "../layouts/payment/HomeContainer";
+import ReviewContainer from "../layouts/review/HomeContainer";
 export default class RouterURL extends Component {
   render() {
     return (
@@ -61,6 +62,7 @@ export default class RouterURL extends Component {
             path="/ethereum/developer"
             component={DeveloperContainer}
           />
+          <Route exact path="/ethereum/review" component={ReviewContainer} />
           <Route exact path="/ethereum/payment" component={PaymentContainer} />
           }/>
           {/* quan ly team */}

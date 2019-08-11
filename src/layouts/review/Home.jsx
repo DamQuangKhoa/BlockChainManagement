@@ -4,7 +4,6 @@ import {
   ContractData,
   ContractForm
 } from "drizzle-react-components";
-import logo from "../../logo.png";
 
 class Home extends Component {
   constructor(props) {
@@ -32,25 +31,24 @@ class Home extends Component {
             <br />
           </div>
           <div className="pure-u-1-1">
-            <h2>Developer</h2>
+            <h2>Review</h2>
             <p>Danh Sach thông tin lập trình viên đã lưu vào Blockchain</p>
             <p>
-              {/* <ContractData contract="DeveloperFactory" method="ranId" /> */}
-              <strong>List Developer</strong>:{" "}
+              <ContractData contract="ReviewFactory" method="test" />
+              {/* <ContractData contract="ReviewFactory" method="test2" /> */}
+              <strong>List Reviews</strong>:{" "}
               {data.map((v, i) => {
                 return (
                   <ContractData
-                    contract="DeveloperFactory"
-                    method="developers"
+                    contract="ReviewFactory"
+                    method="reviewsSecond"
                     methodArgs={[i]}
                   />
                 );
               })}
             </p>
-            <ContractForm
-              contract="DeveloperFactory"
-              method="createRandomDeveloper"
-            />
+            <ContractForm contract="ReviewFactory" method="_testString" />
+
             <br />
             <br />
           </div>

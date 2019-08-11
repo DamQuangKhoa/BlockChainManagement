@@ -2,6 +2,7 @@ import ComplexStorage from "./../build/contracts/ComplexStorage.json";
 import SimpleStorage from "./../build/contracts/SimpleStorage.json";
 import TutorialToken from "./../build/contracts/TutorialToken.json";
 import DeveloperFactory from "./../build/contracts/DeveloperFactory.json";
+import ReviewFactory from "./../build/contracts/ReviewFactory.json";
 
 const drizzleOptions = {
   web3: {
@@ -11,7 +12,13 @@ const drizzleOptions = {
       url: "ws://127.0.0.1:8545"
     }
   },
-  contracts: [ComplexStorage, SimpleStorage, TutorialToken, DeveloperFactory],
+  contracts: [
+    ComplexStorage,
+    SimpleStorage,
+    TutorialToken,
+    DeveloperFactory,
+    ReviewFactory
+  ],
   events: {
     SimpleStorage: ["StorageSet"]
   },
